@@ -48,7 +48,7 @@ export default function App() {
                 <td>{id}</td>
                 <td>{firstName} {lastName}</td>
                 <td>{occupation}</td>
-                <td><img src={pictureUrl}></img></td>
+                <td><img src={pictureUrl}  height="100" width="100"/></td>
               </tr></>
                   ))}
       </table>
