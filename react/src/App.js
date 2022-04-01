@@ -43,11 +43,12 @@ export default function App() {
               <th>Occupation</th>
             </tr>
         {data &&
-          data.map(({ id, firstName, lastName, occupation }) => (
+          data.map(({ id, firstName, lastName, occupation, pictureUrl }) => (
         <><tr>
                 <td>{id}</td>
                 <td>{firstName} {lastName}</td>
                 <td>{occupation}</td>
+                <td>{pictureUrl}</td>
               </tr></>
                   ))}
       </table>
