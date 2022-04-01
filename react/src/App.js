@@ -36,24 +36,15 @@ export default function App() {
       {error && (
         <div>{`There is a problem fetching the post data - ${error}`}</div>
       )}
-      {/* <ul>
-        {data &&
-          data.map(({ id, firstName, lastName, occupation }) => (
-            <li key={id}>
-              <h3>{id}</h3>
-              <h3>{firstName} {lastName}</h3>
-              <h3>{occupation}</h3>
-            </li>
-          ))}
-      </ul> */}
       <table class="wp-table">
-        {data &&
-          data.map(({ id, firstName, lastName, occupation }) => (
-        <><tr>
+      <tr>
               <th>ID</th>
               <th>Full Name</th>
               <th>Occupation</th>
-            </tr><tr>
+            </tr>
+        {data &&
+          data.map(({ id, firstName, lastName, occupation }) => (
+        <><tr>
                 <td>{id}</td>
                 <td>{firstName} {lastName}</td>
                 <td>{occupation}</td>
